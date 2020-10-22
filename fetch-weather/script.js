@@ -4,7 +4,7 @@ function fetchweather(){
         alert('Please Enter location to search!');
     }else{
         $('.date').html(dateBuilder(new Date()));
-    var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=f5ecc4e1a5b64290a7464036cd36dec8&units=metric';
+    var urlWeather = 'https://api.openweathermap.org/data/2.5/weather?q='+location+'&appid=f5ecc4e1a5b64290a7464036cd36dec8&units=metric';
     $.ajax({
         url : urlWeather,
         type : 'GET',
