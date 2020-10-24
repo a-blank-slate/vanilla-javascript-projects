@@ -9,7 +9,7 @@ function addTodo(){
     var todoText='';
     console.log(todos);
     for(i=0;i<todos.length;i++){
-        todoText= todoText +'<div class="alert alert-primary" role="alert">'+todos[i]+'</div>';
+        todoText += '<div class="alert alert-primary" role="alert">'+todos[i]+'</div>';
     }
     $('#todo-container').html(todoText);
 }
