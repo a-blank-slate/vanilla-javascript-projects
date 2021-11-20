@@ -1,1 +1,49 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
 
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        <script>
+            // Initialize Firebase
+            // var config = {
+            //     apiKey: "AIzaSyBrItE-kYM4dU0kaft7WYjb3749lCv42uA",
+            //     authDomain: "ninja-firestore.firebaseapp.com",
+            //     databaseURL: "https://ninja-firestore.firebaseio.com",
+            //     projectId: "ninja-firestore",
+            //     storageBucket: "ninja-firestore.appspot.com",
+            //     messagingSenderId: "176079657618"
+            // };
+            const firebaseConfig = {
+                apiKey: "AIzaSyDQUBMIJxWUxcZcyNJS_LViwpw6A7__mwA",
+                authDomain: "online-exam-management-s-c21a5.firebaseapp.com",
+                databaseURL: "https://online-exam-management-s-c21a5-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "online-exam-management-s-c21a5",
+                storageBucket: "online-exam-management-s-c21a5.appspot.com",
+                messagingSenderId: "803094952766",
+                appId: "1:803094952766:web:240bd26264a3cef26dca6f",
+                measurementId: "G-3N7VCX68X3"
+            };
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
